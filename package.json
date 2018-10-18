@@ -1,0 +1,31 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManaliPatel/Appium.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManaliPatel/Appium/issues"
+  },
+  "homepage": "https://github.com/ManaliPatel/Appium#readme",
+  "dependencies": {
+    "appium": "^1.9.1",
+    "browserstack-local": "^1.3.4",
+    "chai": "^4.2.0",
+    "wdio-appium-service": "^0.2.3",
+    "webdriverio": "^4.13.2"
+  },
+  "devDependencies": {
+    "wdio-browserstack-service": "^0.1.16",
+    "wdio-mocha-framework": "^0.6.3",
+    "wdio-selenium-standalone-service": "0.0.10"
+  }
+}
