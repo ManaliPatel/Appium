@@ -13,6 +13,7 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
+    services: ['selenium-standalone'],
     maxInstances: 2,
     capabilities: {
         iOS: {
@@ -32,10 +33,10 @@ exports.config = {
     },
     sync: true,
     waitforTimeout: 10000,
-    reporters: ['spec', 'json'],
-    reporterOptions: {
-      outputDir: './results'
-    },
+    //reporters: ['spec', 'json'],
+    //reporterOptions: {
+    //  outputDir: './results'
+    //},
     logLevel: 'verbose',
     coloredLogs: true,
     bail: 0,

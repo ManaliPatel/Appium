@@ -5,9 +5,9 @@ var mod = require('../config/modules.js')
 
 describe('user logs', function () {
   it('loads existing portfolio', function () {
-
+    browserB.url("http://google.com")
     mod.iOSLoginPage.alert()
-    mod.iOSLoginPage.alert()
+    //mod.iOSLoginPage.alert()
     mod.iOSLoginPage.get_started()
     mod.iOSLoginPage.enter_email("dorian@bim360ops.com")
     mod.iOSLoginPage.enter_auth()

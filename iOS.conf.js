@@ -11,20 +11,30 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
-
-    maxInstances: 1,
+    services: ['selenium-standalone'],
+    maxInstances: 2,
     capabilities:{
       iOS: {
           port: 4723,
           desiredCapabilities: {
           platformName: 'iOS',
-          platformVersion: '12.1',
-          deviceName: 'iPhone 7',
+          platformVersion: '12.1.4',
+          deviceName: 'Bim\’s iPad Pro',
+          udid: '00008027-0001053236E8002E',
+          xcodeOrgId: '6L4755UJ55',
+          xcodeSigningId: 'iPhone Developer',
+          bundleId: 'Autodesk.minimo',
+          noReset: true
           //app: '/Users/patelman/Desktop/minimoapp/Apps/Minimo\ release-12522150-47DE-4DC0-8F82-BD1572FA4535.ipa'
           //browserName: 'safari'
-          app: '/Users/patelman/Library/Developer/Xcode/DerivedData/Minimo-fgszgpasogiwslhfpnodtunumipq/Build/Products/Debug-iphonesimulator/minimo_sim.app'
+          //app: '/Users/patelman/Library/Developer/Xcode/DerivedData/Minimo-fgszgpasogiwslhfpnodtunumipq/Build/Products/Debug-iphoneos/minimo.app'
         }
-      }
+      },
+      browserB: {
+            desiredCapabilities: {
+                browserName: 'chrome'
+            }
+        }
     },
 
     sync: true,
